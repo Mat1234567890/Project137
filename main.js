@@ -32,7 +32,7 @@ if(objects[i].label == object_name){
 video.stop();
 objectDetector.detect(gotResult);
 document.getElementById("object_status").innerHTML = object_name + " was found";
-synth = window.speechSynthesis();
+synth = window.speechSynthesis;
 utterthis = new SpeechSynthesisUtterance(object_name + " was found");
 synth.speak(utterthis);
 }
